@@ -30,6 +30,7 @@ Package.onUse(function(api) {
 	api.addFiles('client/toolbar.html', 'client');
 	api.addFiles('client/roomList.html', 'client');
 	api.addFiles('client/sortlist.html', 'client');
+	api.addFiles('client/userMood.html', 'client');
 	api.addFiles('client/userStatus.html', 'client');
 
 	api.addFiles('client/createCombinedFlex.js', 'client');
@@ -42,5 +43,6 @@ Package.onUse(function(api) {
 	api.addFiles('client/sideNav.js', 'client');
 	api.addFiles('client/roomList.js', 'client');
 	api.addFiles('client/sortlist.js', 'client');
+	api.addFiles('client/userMood.js', 'client');
 	api.addFiles('client/toolbar.js', 'client');
 });

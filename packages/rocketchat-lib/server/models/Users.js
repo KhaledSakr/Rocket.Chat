@@ -391,6 +391,15 @@ class ModelUsers extends RocketChat.models._Base {
 		return this.update({}, update, { multi: true });
 	}
 
+	setUserMood(_id, mood) {
+		const prop = 'mood.' + mood;
+		return this.update(_id, {
+			$inc: {
+				[prop]: 1
+			}
+		});
+	}
+
 	unsetLoginTokens(_id) {
 		const update = {
 			$set: {

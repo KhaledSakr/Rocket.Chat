@@ -1,0 +1,24 @@
+<template name="userMood">
+	<div class="rc-popover__column">
+		<div class="rc-popover__column">
+			<label class="rc-popover__title">{{_ "MOOD"}}</label>
+			<div class="rc-popover__list">
+				<button value="happy" class="rc-popover__item mood happy">
+					<span>{{_ "😄 Happy"}}</span>
+				</button>
+				<button value="sad" class="rc-popover__item mood sad">
+					<span>{{_ "😔 Sad"}}</span>
+				</button>
+				<button value="uncertain" class="rc-popover__item mood uncertain">
+					<span>{{_ "🤔 Uncertain"}}</span>
+				</button>
+				<button value="confused" class="rc-popover__item mood confused">
+					<span>{{_ "😕 Confused"}}</span>
+				</button>
+			</div>
+		</div>
+		<span class="rc-popover__divider"></span>
+		<canvas id="moodChart">
+		</canvas>
+	</div>
+</template>

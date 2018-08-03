@@ -202,6 +202,22 @@ const toolbarButtons = (user) => {
 
 			popover.open(config);
 		}
+  },
+	{
+		name: t('Mood'),
+		icon: 'emoji',
+		action: (e) => {
+			const options = [];
+			const config = {
+				template: 'userMood',
+				currentTarget: e.currentTarget,
+				data: {
+					options
+				},
+				offsetVertical: e.currentTarget.clientHeight + 10
+			};
+			popover.open(config);
+		}
 	}];
 };
 Template.sidebarHeader.helpers({
